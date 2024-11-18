@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                background-image: url("https://images.bhaskarassets.com/web2images/521/2022/07/01/lpu-730x5481_1656656176.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            lable {
+                display: block;
+                margin-top: 10px;
+        
+            }
+            div {
+                background-color: rgba(255, 255, 255,.777);
+                border-radius: 10px;
+                padding: 50px;
+                width: 400;
+            }
+            input[type="submit"], input[type="reset"]{
+               background-color: rgba(255, 83, 187, .746);
+               color: white;
+               padding: 10px 20px;
+               border-radius: 20px;
+               transition: .5s;
+            }
+            input:focus, textarea:focus, select:focus {
+                background-color: antiquewhite;
+            }
+            input[type="submit"]:hover, input[type="reset"]:hover {
+                background-color: rgba(218, 82, 9, 0.837);
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+            h2 {
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <form action="abc.php" method="POST">
+                <h2>Don't have an Account?! want to join us?</h2>
+               <label for="Name">Name:-</label>
+                <input type="text" placeholder="first name Last name" id="name" name="name"><br><br>
+                <label for="email">Email:-</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="cities">select cities</label>
+                <select name="cities" id="cities">
+                    <option value="select">select</option>
+                    <option value="Noida">Noida</option>
+                    <option value="delhi">delhi</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="benguluru">benguleru</option>
+                </select><br><br>
+                <label for="address">Address:-</label><br><br>
+                <textarea name="" id="address" cols="30" rows="5" name="address"></textarea><br>
+                <label for="gender">gender:-</label><br>
+                <input type="radio" value="male" name="gender">male
+                <input type="radio" value="male" name="gender">female
+                <input type="radio" value="male" name="gender">others<br>
+                <lable for="password">password:-</lable><br>
+                <input type="password" name="password" name="password"><br><br>
+                <lable for="upload">upload:-</lable><br>
+                <input type="file" name="file"><br><br>
+                <input type="tel" placeholder="mobile no."><br><br>
+            <input type="time"><br><br>
+            <input type="week"><br><br>
+            <input type="month"><br><br>
+            <input type="datetime-local"><br><br>
+            <input type="color"><br><br>
+            <input type="search" placeholder="search"><br><br>
+            <input type="range" min="0" max="100"><br><br>
+            <input type="url" placeholder="website url"><br><br>
+            <input type="image" src="nature.png" alt="nature"><br><br>
+                <input type="submit" value="SUBMIT FORM">
+                <input type="reset">
+            </form>
+        </div>
+    </body>
+    </html>
+</body>
+</html>
